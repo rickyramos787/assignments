@@ -15,3 +15,5 @@ print("All the world's a stage, And all the men and women merely players: They h
 ```python
 print("127","0","0","1",sep=".")
 ```
+The ```sep``` argument changes the separator between the printed values. By default, ```print()``` uses a space as the separator. In this case, ```sep="."``` replaces the space with a period and gives us an output of ```127.0.0.1```.
+### d.
