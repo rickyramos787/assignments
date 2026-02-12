@@ -9,6 +9,9 @@ print("His acts being seven ages.")
 ```
 ### b.
 ```python
-print("All the world's a stage, n/And all the men and women merely players: n/They have their exits and their entrances; n/And one man in his time plays many parts,n/His acts being seven ages.")
+print("All the world's a stage, And all the men and women merely players: They have their exits and their entrances; And one man in his time plays many parts, His acts being seven ages.")
 ```
 ### c.
+```python
+print("127","0","0","1",sep=".")
+```
