@@ -53,3 +53,12 @@
   ```python  
   20 + 5 * 2 ** 3 / -4 // 2 % 6 - 1
   ```
+  Final Output = 20.0
+
+  ## Challenges
+  -  Remembering that ** evaluates right to left
+  -  Handling negative modulus rules
+  -  Keeping track of float vs integer division
+  -  Understanding operator precedence order
+  -  Remembering that strings cannot be added to integers
+  -  Not mixing up unary and binary minus
