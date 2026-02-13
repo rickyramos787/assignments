@@ -20,4 +20,6 @@
   -  <class 'bool'>
   -  <class 'str'>
 ### 3. Operator precedence
-  a. 
+  a) 4 + 3 * 2 ** 2 // -2 % 5
+  b) Order of Operations
+    Step 1: 
