@@ -48,4 +48,8 @@
       -  Addition and  Subtraction
           20 + 1.0 = 21.0
           21.0 - 1 = 20.0
-    
+  
+  c) Verify Answer with Python
+  ```python  
+  20 + 5 * 2 ** 3 / -4 // 2 % 6 - 1
+  ```
