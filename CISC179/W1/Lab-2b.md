@@ -20,6 +20,16 @@
   -  <class 'bool'>
   -  <class 'str'>
 ### 3. Operator precedence
-  a) 4 + 3 * 2 ** 2 // -2 % 5
+  a) 20 + 5 * 2 ** 3 / -4 // 2 % 6 - 1
+  
   b) Order of Operations
-    Step 1: 
+    
+    Step 1: Exponent
+    2 ** 3 = 8
+    Expression becomes: 20 + 5  * 8 / -4 // 2 % 6 - 1
+    Step 2: Unary minus
+    -4 remains -4
+    Step 3: Multiply, Divide, Floor Divide, Modulus (from left to right)
+      -  
+    
+    
