@@ -22,3 +22,6 @@ If nothing else is referencing 10, then Python will eventually remove it from me
 | 0x10af0ba58            |  l   |
 | 0x10af0b8d8            |  d   |
 ## Problem-solving
+  -  "dogcat"
+  -  "the dog chases the cat"
+  -  "dogdogdogdog"
