@@ -30,8 +30,14 @@ If nothing else is referencing 10, then Python will eventually remove it from me
   x = x + 1
 ```
 ## Troubleshooting
-a.
-b.
-c.
-d.
-e.
+    a. Valid: Variable names can be lowercase letters.
+    b. Valid: Variables can start with an underscore.
+    c. Invalid: Variable names cannot start with !. They must start with a letter or underscore.
+    d. Valid: This overrides the built-in print() function. After this, you can't use print() normally.
+    e. Invalid: False is a reserved keyword for Boolean constant in Python. You cannot assign to it.
+## Challenges
+  - Understanding how memory addresses change during reassignment
+  - Learning how Python reuses small integers
+  - Remembering valid variable naming rules
+  - Understanding how string concatenation works
+  - Avoiding overwriting built-in functions
