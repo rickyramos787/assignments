@@ -25,3 +25,8 @@ If nothing else is referencing 10, then Python will eventually remove it from me
   -  "dogcat"
   -  "the dog chases the cat"
   -  "dogdogdogdog"
+```python
+  -  x = 50
+  -  x = x + 1
+```
+## Troubleshooting
