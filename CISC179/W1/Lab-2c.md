@@ -12,13 +12,13 @@ If nothing else is referencing 10, then Python will eventually remove it from me
 
 | Address in hexadecimal | Char |
 | ---------------------- | ---- |
-| 0x10af0b398            |      |
-| 0x10af0b908            |      |
-| 0x10af0ba58            |      |
-| 0x10af0ba58            |      |
-| 0x10af0bae8            |      |
-| 0x10af0b668            |      |
-| 0x10af0bae8            |      |
-| 0x10af0bb78            |      |
-| 0x10af0ba58            |      |
-| 0x10af0b8d8            |      |
+| 0x10af0b398            |  H   |
+| 0x10af0b908            |  e   |
+| 0x10af0ba58            |  l   |
+| 0x10af0ba58            |  l   |
+| 0x10af0bae8            |  o   |
+| 0x10af0b668            |  W   |
+| 0x10af0bae8            |  o   |
+| 0x10af0bb78            |  r   |
+| 0x10af0ba58            |  l   |
+| 0x10af0b8d8            |  d   |
