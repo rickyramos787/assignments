@@ -11,9 +11,12 @@ b.
 
 c.
 
-## Troubleshooting
+## 2. Troubleshooting
   a.  
   b.  
   c.  
   d.  
   e.  
+
+## Challenges
+  -  
