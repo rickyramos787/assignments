@@ -20,6 +20,24 @@ interest = averageDailyBalance * interestRatePerMonth
 print("Average Daily Balance:", averageDailyBalance)
 print("Interest:", interest)
 ```
+c.
+```python
+import math
+# Get speeds
+x = float(input("Enter speed of Car A (mph): "))
+y = float(input("Enter speed of Car B (mph): "))
+# Get time
+hours = int(input("Enter hours: "))
+minutes = int(input("Enter minutes: "))
+# Convert time to hours
+t = hours + (minutes / 60)
+# Distances traveled
+distanceA = x * t
+distanceB = y * t
+# Shortest distance between cars
+distance = math.sqrt(distanceA**2 + distanceB**2)
+print("Distance between cars:", distance)
+```
 ## 2. Troubleshooting
     a.  Valid: Variable names can contain letters.
     b.  Valid: Variable names can begin with an underscore.
