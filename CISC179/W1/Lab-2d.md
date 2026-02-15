@@ -9,7 +9,6 @@ print("Weight in pounds: ", pounds)
 ```
 b.
 
-c.
 
 ## 2. Troubleshooting
     a.  Valid: Variable names can contain letters.
