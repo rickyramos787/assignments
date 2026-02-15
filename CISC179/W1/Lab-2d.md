@@ -8,8 +8,18 @@ pounds = kg * 2.2
 print("Weight in pounds: ", pounds)
 ```
 b.
-
-
+```python
+#Credit card interest calculator
+netBalance = float(input("Enter net balance: "))
+payment = float(input("Enter payment made: "))
+d1 = int(input("Enter number of days in billing cycle (d1): "))
+d2 = int(input("Enter number of days payment was made before end of cycle (d2): "))
+interestRatePerMonth = float(input("Enter monthly interest rate: "))
+averageDailyBalance = ((netBalance * d1) - (payment * d2)) / d1
+interest = averageDailyBalance * interestRatePerMonth
+print("Average Daily Balance:", averageDailyBalance)
+print("Interest:", interest)
+```
 ## 2. Troubleshooting
     a.  Valid: Variable names can contain letters.
     b.  Valid: Variable names can begin with an underscore.
