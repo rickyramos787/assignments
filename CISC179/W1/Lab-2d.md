@@ -8,3 +8,12 @@ pounds = kg * 2.2
 print("Weight in pounds: ", pounds)
 ```
 b.
+
+c.
+
+## Troubleshooting
+  a.  
+  b.  
+  c.  
+  d.  
+  e.  
