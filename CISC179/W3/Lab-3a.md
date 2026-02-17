@@ -95,3 +95,4 @@
 124 = |
 125 = }
 126 = ~
+## 2. 2. Logical Operators (And, Or, Not)
