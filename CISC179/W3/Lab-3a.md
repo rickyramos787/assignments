@@ -97,22 +97,20 @@
 126 = ~
 ## 5. Problem-Solving
   a.  
-  
-    ```python
-    # Largest of three integers
+  ```python
+  # Largest of three integers
 
-    a = int(input("Enter first integer: "))
-    b = int(input("Enter second integer: "))
-    c = int(input("Enter third integer: "))
+a = int(input("Enter first integer: "))
+b = int(input("Enter second integer: "))
+c = int(input("Enter third integer: "))
 
-    largest = a
+largest = a
 
-    if b > largest:
-      largest = b
+if b > largest:
+    largest = b
 
-    if c > largest:
-      largest = c
+if c > largest:
+    largest = c
 
-    print("The largest integer is:", largest)
-    ```
-  b.  
+print("The largest integer is:", largest)  b.  
+```
