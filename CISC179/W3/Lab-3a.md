@@ -95,4 +95,5 @@
 124 = |
 125 = }
 126 = ~
-## 2. Logical Operators (and, or, not)
+## 5. Problem-Solving
+  a.  
