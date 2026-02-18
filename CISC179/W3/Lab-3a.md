@@ -145,4 +145,63 @@ else:
     print("Approach 3:", "odd")
 ```
   c.  
-  
+  ```python
+# Grade scheme for CISC 179
+
+percent = int(input("Enter your percentage (integer): "))
+
+if percent > 90:
+    print("Grade: A")
+    print("Description: Work of genuinely superior quality.")
+elif 80 <= percent <= 89:
+    print("Grade: B")
+    print("Description: Passing performance falls approximately in the upper distribution of passing grades.")
+elif 71 <= percent <= 79:
+    print("Grade: C")
+    print("Description: Passing performance falls approximately in the center of the distribution of all passing grades.")
+elif 65 <= percent <= 70:
+    print("Grade: D")
+    print("Description: Passing performance falls approximately in the lower distribution of passing grades.")
+else:
+    print("Grade: F")
+    print("Description: Failing performance that does not satisfy the basic requirements of the course and needs to be improved in significant ways.")
+```
+  d.  
+  ```python
+# Truth table for and/or/not
+
+op = input("Enter a logical operator (and, or, not): ").strip().lower()
+
+if op == "and":
+    print("A     B     A and B")
+    for A in [False, True]:
+        for B in [False, True]:
+            print(A, " ", B, " ", A and B)
+
+elif op == "or":
+    print("A     B     A or B")
+    for A in [False, True]:
+        for B in [False, True]:
+            print(A, " ", B, " ", A or B)
+
+elif op == "not":
+    print("A     not A")
+    for A in [False, True]:
+        print(A, " ", (not A))
+
+else:
+    print("Invalid operator. Please enter: and, or, not")
+```
+  e.  
+  ```python
+# Even or odd using ONLY bitwise AND
+
+num = int(input("Enter an integer: "))
+
+if (num & 1) == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
+```
+## 6. Code Revision
+
