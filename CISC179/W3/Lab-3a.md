@@ -115,4 +115,34 @@ if c > largest:
 print("The largest integer is:", largest)  b.  
 ```
   b.  
+  ```python
+num = int(input("Enter an integer: "))
+
+#############################
+# Approach 1: Modulus (%)
+#############################
+if num % 2 == 0:
+    print("Approach 1:", "even")
+else:
+    print("Approach 1:", "odd")
+
+#############################
+# Approach 2: Integer division check
+# (If dividing by 2 and multiplying back gives same number → even)
+#############################
+if (num // 2) * 2 == num:
+    print("Approach 2:", "even")
+else:
+    print("Approach 2:", "odd")
+
+#############################
+# Approach 3: Bitwise AND (&)
+# (Last bit 0 = even, last bit 1 = odd)
+#############################
+if (num & 1) == 0:
+    print("Approach 3:", "even")
+else:
+    print("Approach 3:", "odd")
+```
+  c.  
   
