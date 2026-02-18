@@ -204,4 +204,47 @@ else:
     print("The number is odd.")
 ```
 ## 6. Code Revision
+```python
+# Code Revision
 
+# Get user input
+name = input("What's your name? ")
+time = int(input("What time is it (HHMM, e.g., 0930, 1545)? "))
+
+if hours < 0 or hours > 23 or minutes < 0 or minutes > 59:
+    print("Invalid time. Please enter time in HHMM format (0000 to 2359).")
+else:
+    # Nested decision structure:
+    if time < 1200:
+        # Morning
+        print("Hi " + name + ", good morning!")
+    else:
+        # Not morning → could be afternoon or evening
+        if time < 1800:
+            # Afternoon
+            print("Hi " + name + ", good afternoon!")
+        else:
+            # Evening (1800 or later)
+            print("Hi " + name + ", good evening!")
+
+    # Always say goodbye at the end (only if time was valid)
+    print("Good Bye")
+```
+## Output Verification
+```python
+one
+two
+```
+## Challenges
+
+  -  Understanding how Python compares different data types (int, float, and string) was challenging at first, especially seeing that 1 == 1.0 evaluates to True.
+
+  -  Distinguishing between separate `if` statements and `if-elif-else` chains required careful attention, since they do not behave the same way.
+
+  -  Working with logical operators (`and`, `or`, `not`) required thinking carefully about truth tables and how conditions are evaluated.
+
+  -  Using the bitwise AND operator (`&`) to determine whether a number is even or odd was initially confusing because it involves understanding binary representation.
+
+  -  Making sure indentation and syntax were correct was important, since Python is sensitive to formatting.
+
+  -  Testing different inputs helped identify logical mistakes and reinforced how decision statements control program flow.
