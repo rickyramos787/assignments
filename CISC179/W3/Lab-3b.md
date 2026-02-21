@@ -19,3 +19,8 @@ while n0 != 1:
 print("steps =", steps)
 ```
 b.  
+```python
+while True:
+    print("This loop will run forever...")
+```
+c.
