@@ -23,4 +23,10 @@ b.
 while True:
     print("This loop will run forever...")
 ```
-c.
+```python
+count = 0
+
+while count < 5:
+    print("Looping...")
+    count += 1
+```
