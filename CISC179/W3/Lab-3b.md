@@ -94,3 +94,13 @@ print("Total number of distinct alphabets:", len(letter_counts))
 for letter in letter_counts:
     print(letter, "=", letter_counts[letter])
 ```
+## Challenges
+    -    One challenge I faced was understanding how to properly structure a while loop without creating an infinite loop. I had to make sure the condition would eventually become false.
+
+    -    Another challenge was keeping track of the variable updates in the Collatz sequence. It was easy to forget to update the step counter or reassign n0 correctly.
+
+    -    I also found it tricky to ignore punctuation and uppercase letters when counting characters. I had to carefully check each character and convert everything to lowercase.
+
+    -    Making sure the total of all distinct letter counts matched the total alphabet count required extra debugging and testing.
+
+    -    Finally, I had to pay close attention to indentation, since Python is very sensitive to spacing and it caused errors when misaligned.
