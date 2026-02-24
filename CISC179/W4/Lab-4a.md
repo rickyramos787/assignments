@@ -20,4 +20,24 @@ print("Tuples are immutable, so individual elements cannot be reassigned.")
 ```
 c.
 ```python
+my_tuple = (1, 2, 3, 4, 3, 2, 1, 2, 3, 5, 4, 3, 2, 1)
+
+for num in set(my_tuple):
+    print(f"{num} appears {my_tuple.count(num)} time(s)")
+```
+d.
+```python
+my_tuple_c = (1, 2, 3, 4, 3, 2, 1, 2, 3, 5, 4, 3, 2, 1)
+my_tuple_d = my_tuple_c + my_tuple_c
+
+print("Part c tuple:", my_tuple_c)
+print("Part d tuple:", my_tuple_d)
+
+print("Length of part c:", len(my_tuple_c))
+print("Length of part d:", len(my_tuple_d))
+
+print("Are they equal?", my_tuple_c == my_tuple_d)
+print("Are they the same object?", my_tuple_c is my_tuple_d)
+```
+e.
 
