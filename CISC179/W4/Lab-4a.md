@@ -46,4 +46,13 @@ e.
 
 ## 2. Packing and Unpacking Tuples
 a.
+Each variable (one, two, three, four) is of  type int (integer).
+c.
+```python
+x = (1, 2, 3, 4)
+a, *b, c = x
+print(a, b, c)
+print((a, b, c))
+```
+## 3. Memory Management
 
