@@ -1,5 +1,5 @@
 # Tuples in Python
-## Exercising Tuples
+## 1. Exercising Tuples
 a.
 ```python
 my_tuple = (
@@ -40,4 +40,10 @@ print("Are they equal?", my_tuple_c == my_tuple_d)
 print("Are they the same object?", my_tuple_c is my_tuple_d)
 ```
 e.
+	•	x.append(1) is illegal because tuples do not have an append() method. append() is for lists, not tuples.
+	•	x[1] = "hello" is illegal because tuples are immutable, so you cannot change an item after creation.
+	•	del x[2] is illegal because you cannot delete a single element from a tuple.
+
+## 2. Packing and Unpacking Tuples
+a.
 
