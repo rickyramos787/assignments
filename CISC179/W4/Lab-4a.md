@@ -55,4 +55,20 @@ print(a, b, c)
 print((a, b, c))
 ```
 ## 3. Memory Management
+| Index | my_x | my_x |
+| ----- | ---- | ---- |
+| 0     |100   |200   |
+| 1     |200   |300   |
+| 2     |300   |400   |
+| 3     |400   |500   |
 
+## Challenges
+- One challenge I faced was remembering that tuples are immutable, so I could not change values like I do in a list.
+
+- Another challenge was understanding tuple unpacking with * because it collects extra values into a list.
+
+- The memory management section was also a little confusing at first, especially how Python can reuse addresses for some integer values.
+
+- I solved this by testing the code with id() and comparing the addresses step by step.
+
+- I also had to be careful with tuple methods, because tuples do not support methods like append().
