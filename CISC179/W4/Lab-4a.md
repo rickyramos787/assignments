@@ -14,4 +14,10 @@ print("my_tuple =", my_tuple)
 ```
 b.
 ```python
+my_tuple = (1, 2, 3)
+# my_tuple[0] = 10   # This will raise an error (TypeError)
+print("Tuples are immutable, so individual elements cannot be reassigned.")
+```
+c.
+```python
 
