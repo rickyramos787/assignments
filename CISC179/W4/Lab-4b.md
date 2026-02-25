@@ -37,9 +37,9 @@ while choice == "Y" or choice == "y":
     count = count + 1
 
     choice = input("Do you want to continue (Y/N): ")
-```
-c.
 
 print("\nFinal dictionary:")
 print(my_user_dict)
 print("Total keys entered:", count)
+```
+c.
