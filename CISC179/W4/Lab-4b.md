@@ -181,3 +181,10 @@ d_copy = d_orig.copy()
 ```
 c.
 ```python
+d = {}
+d[[1, 2, 3]] = "value"   # TypeError: unhashable type: 'list'
+```
+Why the “unhashable type” error happens (dictionary keys):
+	•	In Python, dictionary keys must be hashable.
+	•	Hashable means Python can run hash(key) on it and get a fixed value that does not change.
+	•	Dictionaries use this hash value to store and quickly find keys in a hash table.
