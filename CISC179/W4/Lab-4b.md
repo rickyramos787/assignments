@@ -177,3 +177,7 @@ print("d_copy:", d_copy)
 ```
 b.
 ```python
+d_copy = d_orig.copy()
+```
+c.
+```python
