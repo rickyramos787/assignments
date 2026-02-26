@@ -125,3 +125,41 @@ print(my_dict)
 ```
 e.
 ```python
+# 1e) Count number of words using a dictionary (case-sensitive)
+
+text = "The tiger (Panthera tigris) is a large cat and a member of the genus Panthera native to Asia. It has a powerful, muscular body with a large head and paws, a long tail and orange fur with black, mostly vertical stripes. It is traditionally classified into nine recent subspecies, though some recognise only two subspecies, mainland Asian tigers and the island tigers of the Sunda Islands."
+
+# Basic cleanup (remove punctuation by replacing with spaces)
+clean_text = text
+clean_text = clean_text.replace("(", " ")
+clean_text = clean_text.replace(")", " ")
+clean_text = clean_text.replace(",", " ")
+clean_text = clean_text.replace(".", " ")
+clean_text = clean_text.replace(";", " ")
+clean_text = clean_text.replace(":", " ")
+
+words = clean_text.split()
+
+word_count = {}
+i = 0
+
+while i < len(words):
+    w = words[i]
+
+    if w in word_count:
+        word_count[w] = word_count[w] + 1
+    else:
+        word_count[w] = 1
+
+    i = i + 1
+
+print("Total words:", len(words))
+print("Count of 'The':", word_count.get("The", 0))
+print("Count of 'the':", word_count.get("the", 0))
+
+print("\nFull dictionary of word counts:")
+print(word_count)
+```
+## 2. Troubleshooting
+a.
+```python
