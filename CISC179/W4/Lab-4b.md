@@ -102,3 +102,26 @@ print(result_dict)
 ```
 d.
 ```python
+# 1d) Convert the following list into a dictionary using a loop
+
+pairs = [
+    ("make", "Honda"),
+    ("model", "Civic"),
+    ("year", 2017),
+    ("color", "Gray"),
+    ("mileage", 100000)
+]
+
+my_dict = {}
+i = 0
+
+while i < len(pairs):
+    key = pairs[i][0]
+    value = pairs[i][1]
+    my_dict[key] = value
+    i = i + 1
+
+print(my_dict)
+```
+e.
+```python
