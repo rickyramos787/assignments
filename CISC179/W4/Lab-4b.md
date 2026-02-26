@@ -188,3 +188,11 @@ Why the “unhashable type” error happens (dictionary keys):
 	•	In Python, dictionary keys must be hashable.
 	•	Hashable means Python can run hash(key) on it and get a fixed value that does not change.
 	•	Dictionaries use this hash value to store and quickly find keys in a hash table.
+
+## Challenges
+
+- One challenge I had was understanding why d_copy = d_orig doesn’t actually copy a dictionary. At first I thought it made a separate dictionary, but it really just points both variables to the same object, so any change to d_copy also changes d_orig. The fix was using d_orig.copy() to make a real copy.
+
+- Another challenge was dealing with dictionary errors. I got a KeyError when I tried to access a key that wasn’t in the dictionary (like d["mileage"]). I learned that I can prevent that by checking if "mileage" in d first or using d.get("mileage").
+
+- I also had to generate an “unhashable type” error and explain it. I learned that dictionary keys must be hashable (unchangeable), so using a list as a key causes TypeError: unhashable type: 'list' because lists are mutable and Python can’t use them safely as dictionary keys.
