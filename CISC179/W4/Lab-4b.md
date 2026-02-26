@@ -163,3 +163,17 @@ print(word_count)
 ## 2. Troubleshooting
 a.
 ```python
+# 2a) Change d_copy without affecting d_orig (make a real copy)
+
+d_orig = {123: "Coconut"}
+
+d_copy = d_orig.copy()   # real (shallow) copy
+
+d_copy[123] = "Mango"    # change copy
+d_copy[999] = "Apple"    # add new key to copy
+
+print("d_orig:", d_orig)
+print("d_copy:", d_copy)
+```
+b.
+```python
