@@ -85,6 +85,7 @@ if __name__ == "__main__":
     main()
 ```
 b.
+Use *args to accept “any number” of positional arguments:
 ```python
 def print_reverse(*args):
     for item in reversed(args):
@@ -93,6 +94,14 @@ def print_reverse(*args):
 print_reverse(1, 2, 3, "hello", True)
 ```
 c.
+If you change a list or dictionary passed into a function, the change is usually visible outside the function because they’re mutable and the function receives a reference to the same object.
+
+Operations likely to create visible changes:
+	•	Lists: append, extend, insert, remove, pop, clear, sort, reverse, lst[i]=..., lst[:] = ...
+	•	Dicts: d[key]=..., update, pop, popitem, clear
+
+How to minimize the risk:
+Work on a copy (lst.copy(), d.copy()), use copy.deepcopy() for nested data, or return a new list/dict instead of modifying the original.
 ```python
 import copy
 
