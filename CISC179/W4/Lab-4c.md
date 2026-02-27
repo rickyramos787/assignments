@@ -113,4 +113,38 @@ def safe_nested(nested):
 d.
 After funct_1() runs: x is still 5 (because x=3 is a local variable inside the function). After funct_2() runs: x becomes 2 (because global x modifies the global variable)
 ```python
+x = 5
 
+def funct_1():
+    x = 3  # local
+
+def funct_2():
+    global x
+    x = 2  # global change
+
+funct_1()
+print(x)  # 5
+
+funct_2()
+print(x)  # 2
+```
+## 2. Troubleshooting
+a.
+**c means: “capture keyword arguments into a dictionary”. But my_func(1,2,3,4,5,6) supplies extra positional arguments, not keyword args → error.
+```python
+def my_func(a, b, *c):
+    print(c)
+
+my_func(1, 2, 3, 4, 5, 6)  # prints: (3, 4, 5, 6)
+```
+b.
+Inside my_func_global(), x = 100 creates a local variable x. It does not change the global x, so the global stays 10.
+```python
+def my_func_global():
+    global x
+    x = 100
+
+x = 10
+my_func_global()
+print(x)  # 100
+```
