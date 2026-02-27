@@ -76,4 +76,12 @@ if __name__ == "__main__":
 ```
 b.
 ```python
+def print_reverse(*args):
+    for item in reversed(args):
+        print(item)
+
+print_reverse(1, 2, 3, "hello", True)
+```
+c.
+```python
 
