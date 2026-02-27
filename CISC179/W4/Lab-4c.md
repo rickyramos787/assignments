@@ -97,6 +97,7 @@ c.
 If you change a list or dictionary passed into a function, the change is usually visible outside the function because they’re mutable and the function receives a reference to the same object.
 
 Operations likely to create visible changes:
+	
 	•	Lists: append, extend, insert, remove, pop, clear, sort, reverse, lst[i]=..., lst[:] = ...
 	•	Dicts: d[key]=..., update, pop, popitem, clear
 
