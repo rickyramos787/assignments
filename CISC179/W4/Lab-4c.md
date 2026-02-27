@@ -148,3 +148,7 @@ x = 10
 my_func_global()
 print(x)  # 100
 ```
+## Challenges
+	•	One challenge was deciding when to use *args vs **kwargs. I initially mixed them up and learned that *args collects extra positional values, while **kwargs collects keyword pairs into a dictionary.
+	•	Another challenge was input validation. Users can type letters, blanks, or mixed commas/spaces, so I had to sanitize the input and use float() inside a try/except to detect invalid entries.
+	•	I also had to be careful with variable scope. Assigning to a name inside a function creates a local variable unless global is used, which affected expected results in the troubleshooting problems.
