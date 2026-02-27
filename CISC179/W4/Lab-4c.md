@@ -4,6 +4,7 @@ a.
 
 
 Conversion factor (US gallons)
+
 mpg = kpl × (3.785411784 / 1.609344)
 kpl = mpg × (1.609344 / 3.785411784)
 
