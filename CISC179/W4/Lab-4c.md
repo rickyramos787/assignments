@@ -2,12 +2,12 @@
 ## 1. Create a Unit Conversion Program Using Functions
 a.
 Conversion factor (US gallons)
-•	mpg = kpl × (3.785411784 / 1.609344)
-•	kpl = mpg × (1.609344 / 3.785411784)
+•mpg = kpl × (3.785411784 / 1.609344)
+•kpl = mpg × (1.609344 / 3.785411784)
 
 So:
-•	1 kpl ≈ 2.352145833 mpg
-•	1 mpg ≈ 0.425143707 kpl
+•1 kpl ≈ 2.352145833 mpg
+•1 mpg ≈ 0.425143707 kpl
 ```python
 KM_PER_MILE = 1.609344
 L_PER_US_GAL = 3.785411784
