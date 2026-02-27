@@ -84,4 +84,13 @@ print_reverse(1, 2, 3, "hello", True)
 ```
 c.
 ```python
+import copy
+
+def safe_nested(nested):
+    clone = copy.deepcopy(nested)
+    clone[0].append("X")
+    return clone
+```
+d.
+```python
 
