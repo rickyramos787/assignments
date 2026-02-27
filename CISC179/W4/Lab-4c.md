@@ -111,5 +111,6 @@ def safe_nested(nested):
     return clone
 ```
 d.
+After funct_1() runs: x is still 5 (because x=3 is a local variable inside the function). After funct_2() runs: x becomes 2 (because global x modifies the global variable)
 ```python
 
