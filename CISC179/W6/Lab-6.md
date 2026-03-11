@@ -81,3 +81,89 @@ Serina Williams
 You can connect with the author at [rfederer@tennis.com] and [swilliams@tennis.com]
 Admin contact number: 1-888-111-2222
 """
+
+# 1. Word and character count using a list
+
+character_count = len(story)
+word_list = story.split()
+word_count = len(word_list)
+
+print("1. WORD AND CHARACTER COUNT USING A LIST")
+print("Character count:", character_count)
+print("Word count:", word_count)
+
+# Create a histogram of word frequencies
+frequency_list = []
+
+for word in word_list:
+    clean_word = word.lower().strip(".,!?;:()[]\"'“”")
+    found = False
+
+    for item in frequency_list:
+        if item[0] == clean_word:
+            item[1] += 1
+            found = True
+            break
+
+    if found == False and clean_word != "":
+        frequency_list.append([clean_word, 1])
+
+print("\nHistogram of word frequencies:")
+for item in frequency_list:
+    print(item[0], ":", item[1])
+
+# 2. Repeat with a dictionary
+
+word_dictionary = {}
+
+for word in word_list:
+    clean_word = word.lower().strip(".,!?;:()[]\"'“”")
+    if clean_word != "":
+        if clean_word in word_dictionary:
+            word_dictionary[clean_word] += 1
+        else:
+            word_dictionary[clean_word] = 1
+
+print("\n2. WORD FREQUENCIES USING A DICTIONARY")
+for word, count in word_dictionary.items():
+    print(word, ":", count)
+
+# 3. Regular expressions for data extraction
+
+email_pattern = r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+phone_pattern = r"\d{1}-\d{3}-\d{3}-\d{4}"
+
+emails = re.findall(email_pattern, story)
+phone_numbers = re.findall(phone_pattern, story)
+
+extracted_data = []
+for email in emails:
+    extracted_data.append(email)
+
+for phone in phone_numbers:
+    extracted_data.append(phone)
+
+print("\n3. EXTRACTED EMAILS")
+print(emails)
+
+print("\nEXTRACTED PHONE NUMBERS")
+print(phone_numbers)
+
+print("\nALL EXTRACTED DATA IN A SEPARATE LIST")
+print(extracted_data)
+
+# 4. Email username processing
+
+usernames = []
+new_hotmail_list = []
+
+for email in emails:
+    username = email.split("@")[0]
+    usernames.append(username)
+    new_hotmail_list.append(username + "@hotmail.com")
+
+print("\n4. EMAIL USERNAMES")
+print(usernames)
+
+print("\nNEW HOTMAIL ADDRESSES")
+print(new_hotmail_list)
