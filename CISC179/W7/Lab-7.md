@@ -105,7 +105,7 @@ for i in range(4):
         print("Queue empty")
 ```
 
-# 3. Timer Class
+## 3. Timer Class
 ```python
 def two_digits(val):
     if val < 10:
@@ -159,3 +159,50 @@ timer.prev_second()
 print(timer)
 ```
 
+## 4. Weeker Class
+```python
+class WeekDayError(Exception):
+    pass
+
+
+class Weeker:
+    __days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+    def __init__(self, day):
+        if day not in Weeker.__days:
+            raise WeekDayError
+        self.__day = day
+
+    def __str__(self):
+        return self.__day
+
+    def add_days(self, n):
+        index = Weeker.__days.index(self.__day)
+        index = (index + n) % 7
+        self.__day = Weeker.__days[index]
+
+    def subtract_days(self, n):
+        index = Weeker.__days.index(self.__day)
+        index = (index - n) % 7
+        self.__day = Weeker.__days[index]
+
+
+try:
+    weekday = Weeker('Mon')
+    print(weekday)
+    weekday.add_days(15)
+    print(weekday)
+    weekday.subtract_days(23)
+    print(weekday)
+    weekday = Weeker('Monday')
+except WeekDayError:
+    print("Sorry, I can't serve your request.")
+```
+
+## Challenges
+    - Understanding when to use inheritance versus creating a class from scratch
+    - Making sure private attributes were used correctly with double underscores
+    - Getting the queue behavior right for FIFO order
+    - Handling wrap-around logic for the Timer class at 23:59:59 and 00:00:00
+    - Handling wrap-around logic for days of the week in the Weeker class
+    - Making sure exceptions were raised only when invalid data or empty structures were encountered
